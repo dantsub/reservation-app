@@ -1,0 +1,14 @@
+{
+  "name": "reservation-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "serve": "json-server --watch db.json --port $PORT"
+  },
+  "keywords": [],
+  "author": "Joshua",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
