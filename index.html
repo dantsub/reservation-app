@@ -11,6 +11,7 @@
   <script type="module" src="./components/base-table-mobile/index.js"></script>
   <script type="module" src="./components/base-table/index.js"></script>
   <script type="module" src="./components/x-form/index.js"></script>
+  <script type="module" src="./components/x-details/index.js"></script>
   <title>Reservation App</title>
 </head>
 <body class="bg-slate-300">
@@ -24,6 +25,7 @@
         <h2 class="px-4 pt-4 pb-2 text-2xl border-b text-sky-800">Formulario</h2>
         <x-form data="[{'label': 'nombre', 'type': 'text', 'placeholder': 'John Doe', 'name': 'name'}, {'label': 'email', 'type': 'email', 'placeholder': 'johndoe@example.com', 'name': 'email'}]"></x-form>
       </div>
+      <x-details data='{"nombre": "John Doe", "email": "johndoe@example.com"}'></x-details>
     </div>
   </main>
 </body>
