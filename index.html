@@ -10,15 +10,20 @@
   <script type="module" src="./components/nav-sidebar/nav-sidebar.js"></script>
   <script type="module" src="./components/base-table-mobile/index.js"></script>
   <script type="module" src="./components/base-table/index.js"></script>
+  <script type="module" src="./components/x-form/index.js"></script>
   <title>Reservation App</title>
 </head>
 <body class="bg-slate-300">
   <main class="flex">
     <nav-sidebar class="w-fit"></nav-sidebar>
-    <div class="flex-1 p-6">
+    <div class="flex-1 max-h-screen p-6 overflow-auto">
       <h1 class="p-4 text-5xl text-center bg-white rounded shadow text-sky-700">Reservation App</h1>
       <base-table data="[{'name': 'John Doe', 'email': 'johndoe@example.com', 'phone': '1234567890', 'date': '2021-01-01', 'time': '12:00', 'guests': 2, 'messagetext': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.'}, {'name': 'John Doe', 'email': 'johndoe@example.com', 'phone': '1234567890', 'date': '2021-01-01', 'time': '12:00', 'guests': 2, 'messagetext': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.'}]"></base-table>
       <table-mobile data="[{'name': 'John Doe', 'email': 'johndoe@example.com', 'phone': '1234567890', 'date': '2021-01-01', 'time': '12:00', 'guests': 2, 'messagetext': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.'}, {'name': 'John Doe', 'email': 'johndoe@example.com', 'phone': '1234567890', 'date': '2021-01-01', 'time': '12:00', 'guests': 2, 'messagetext': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.'}]"></table-mobile>
+      <div class="bg-white rounded-lg">
+        <h2 class="px-4 pt-4 pb-2 text-2xl border-b text-sky-800">Formulario</h2>
+        <x-form data="[{'label': 'nombre', 'type': 'text', 'placeholder': 'John Doe', 'name': 'name'}, {'label': 'email', 'type': 'email', 'placeholder': 'johndoe@example.com', 'name': 'email'}]"></x-form>
+      </div>
     </div>
   </main>
 </body>
