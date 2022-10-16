@@ -8,9 +8,18 @@
   <!-- tailwind css para los estilos -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script type="module" src="./components/nav-sidebar/nav-sidebar.js"></script>
+  <script type="module" src="./components/base-table-mobile/index.js"></script>
+  <script type="module" src="./components/base-table/index.js"></script>
   <title>Reservation App</title>
 </head>
-<body>
-  <nav-sidebar></nav-sidebar>
+<body class="bg-slate-300">
+  <main class="flex">
+    <nav-sidebar class="w-fit"></nav-sidebar>
+    <div class="flex-1 p-6">
+      <h1 class="p-4 text-5xl text-center bg-white rounded shadow text-sky-700">Reservation App</h1>
+      <base-table data="[{'name': 'John Doe', 'email': 'johndoe@example.com', 'phone': '1234567890', 'date': '2021-01-01', 'time': '12:00', 'guests': 2, 'messagetext': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.'}, {'name': 'John Doe', 'email': 'johndoe@example.com', 'phone': '1234567890', 'date': '2021-01-01', 'time': '12:00', 'guests': 2, 'messagetext': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.'}]"></base-table>
+      <table-mobile data="[{'name': 'John Doe', 'email': 'johndoe@example.com', 'phone': '1234567890', 'date': '2021-01-01', 'time': '12:00', 'guests': 2, 'messagetext': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.'}, {'name': 'John Doe', 'email': 'johndoe@example.com', 'phone': '1234567890', 'date': '2021-01-01', 'time': '12:00', 'guests': 2, 'messagetext': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.'}]"></table-mobile>
+    </div>
+  </main>
 </body>
 </html>
