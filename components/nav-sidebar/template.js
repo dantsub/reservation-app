@@ -4,22 +4,25 @@ const TEMPLATE = `
   <div class="w-full h-1 my-3 bg-white rounded"></div>
   <ul class="my-2">
     <li class="rounded hover:bg-sky-900">
-      <a href="./client/" class="block p-3">Clientes</a>
+      <a href="client/" class="block p-3">Clientes</a>
     </li>
     <li class="rounded hover:bg-sky-900">
-      <a href="./box/" class="block p-3">Palcos</a>
+      <a href="box/" class="block p-3">Palcos</a>
     </li>
     <li class="rounded hover:bg-sky-900">
-      <a href="./reservation/" class="block p-3">Reservaciones</a>
+      <a href="category/" class="block p-3">Categorias</a>
     </li>
     <li class="rounded hover:bg-sky-900">
-      <a href="./message/" class="block p-3">Mensajes</a>
+      <a href="reservation/" class="block p-3">Reservaciones</a>
     </li>
     <li class="rounded hover:bg-sky-900">
-      <a href="./score/" class="block p-3">Score</a>
+      <a href="message/" class="block p-3">Mensajes</a>
     </li>
     <li class="rounded hover:bg-sky-900">
-      <a href="./admin/" class="block p-3">Admin</a>
+      <a href="score/" class="block p-3">Score</a>
+    </li>
+    <li class="rounded hover:bg-sky-900">
+      <a href="admin/" class="block p-3">Admin</a>
     </li>
   </ul>
   <div class="flex justify-between mt-auto">

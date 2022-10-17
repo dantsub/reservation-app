@@ -14,7 +14,7 @@ class BaseTable extends HTMLElement {
     const thead = document.createElement("thead");
     thead.classList.add("border-b", "text-sky-900");
     const tr = document.createElement("tr");
-    const keys = Object.keys(this.data[0]);
+    const keys = Object.keys(this.data[0]).slice(1);
     keys.forEach((content) => {
       const th = document.createElement("th");
       th.classList.add("px-2", "py-3");
@@ -60,13 +60,14 @@ class BaseTable extends HTMLElement {
       tr.classList.add("transition");
       tr.classList.add("duration-150");
       tr.classList.add("ease-in-out");
-      const values = Object.values(item);
+      const { id, ...rest } = item;
+      const values = Object.values(rest);
       values.forEach((value) => {
         tr.appendChild(this.addItems(value));
       });
-      const icon1 = this.createLink("./show.html", this.createIcon("eye"));
-      const icon2 = this.createLink("./edit.html", this.createIcon("pencil", "px-4"));
-      const icon3 = this.createLink("./delete.html", this.createIcon("trash"));
+      const icon1 = this.createLink("show.html" + "?id=" + id, this.createIcon("eye"));
+      const icon2 = this.createLink("edit.html" + "?id=" + id, this.createIcon("pencil", "px-4"));
+      const icon3 = this.createLink("delete.html" + "?id=" + id, this.createIcon("trash"));
       const actionsTd = document.createElement("td");
       actionsTd.setAttribute("class", "p-2 text-center");
       actionsTd.appendChild(icon1);
