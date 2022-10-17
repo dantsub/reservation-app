@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agregar categoria</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="../components/nav-sidebar/nav-sidebar.js"></script>
+  <script type="module" src="../components/x-form/index.js"></script>
+</head>
+<body class="bg-slate-300">
+  <main class="flex">
+    <nav-sidebar></nav-sidebar>
+    <div class="flex-1 p-4 overflow-auto">
+      <div class="max-w-lg mx-auto bg-white rounded-lg shadow">
+        <h1 class="p-4 text-3xl text-sky-700">Agregar categoria</h1>
+        <div class="h-0.5 bg-slate-200"></div>
+        <x-form
+          data='[{"label": "Nombre", "type": "text", "placeholder": "categoria 1", "name": "name"}, {"label": "Descripción", "type": "text", "placeholder": "Descripción categoria 1", "name": "description"}]'
+        ></x-form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
